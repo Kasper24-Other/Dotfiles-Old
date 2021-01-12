@@ -49,7 +49,9 @@ local run_on_start_up = {
    "unclutter",
    "xrandr --output DP-2 --gamma 0.75",
    "lxqt-policykit-agent",
-   "cd Hardware/OpenRGB && ./openrgb"
+   "cd Hardware/OpenRGB && ./openrgb",
+   "cd Dotfiles/Misc && sh ./capslock-fix.sh",
+   "xset r rate 200 30"
 }
 
 
