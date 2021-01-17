@@ -128,7 +128,7 @@ tag_list.create = function(s)
          awful.button({}, 1,
             function(t)
                t:view_only()
-               awful.spawn("killall -9 rofi")
+               awful.spawn("killall -9 rofi", false)
             end
          ),
          awful.button({modkey}, 1,

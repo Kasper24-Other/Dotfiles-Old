@@ -56,9 +56,12 @@ local run_on_start_up = {
    "lxqt-policykit-agent",
    "cd Hardware/OpenRGB && ./openrgb",
    "cd Dotfiles/Scripts && sh ./capslock-fix.sh",
-   "xset r rate 200 30"
+   "xset r rate 200 30",
+   "xset s off",
+   "xset -dpms",
+   "xset s noblank"
 }
-
+--WINEESYNC=1 protontricks -c 'wine ~/Downloads/BakkesMod.exe' 252950
 
 -- ===================================================================
 -- Initialization

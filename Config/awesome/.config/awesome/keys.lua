@@ -621,7 +621,7 @@ for i = 1, 9 do
             local screen = awful.screen.focused()
             local tag = screen.tags[i]
             if tag then
-               awful.spawn("killall -9 rofi")
+               awful.spawn("killall -9 rofi", false)
                tag:view_only()
             end
          end,
@@ -633,7 +633,7 @@ for i = 1, 9 do
             if client.focus then
                local tag = client.focus.screen.tags[i]
                if tag then
-                  awful.spawn("killall -9 rofi")
+                  awful.spawn("killall -9 rofi", false)
                   client.focus:move_to_tag(tag)
                end
             end
@@ -646,7 +646,7 @@ for i = 1, 9 do
             if client.focus then
                local tag = client.focus.screen.tags[i]
                if tag then
-                  awful.spawn("killall -9 rofi")
+                  awful.spawn("killall -9 rofi", false)
                   client.focus:move_to_tag(tag)
                   tag:view_only()
                end
